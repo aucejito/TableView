@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.GUITableViewController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="63.0" prefWidth="600.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="botonAdd" mnemonicParsing="false" onAction="#pulsadoBoton" text="Añadir" />
+            <Button fx:id="BModificar" mnemonicParsing="false" onAction="#pulsadoBoton" text="Modificar" />
+            <Button fx:id="BBorrar" mnemonicParsing="false" onAction="#pulsadoBoton" text="Borrar" />
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <TableView fx:id="vistaTablafxID" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="TableColumna1fxID" prefWidth="173.0" text="Nombre" />
+          <TableColumn fx:id="TableColumna2fxID" minWidth="0.0" prefWidth="328.0" text="Apellidos" />
+            <TableColumn id="celda3" fx:id="imageColumnfxID" prefWidth="90.0" text="Imagen" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>
